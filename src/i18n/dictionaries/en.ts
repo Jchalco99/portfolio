@@ -1,0 +1,250 @@
+import type { Dictionary } from "../types";
+
+export const enDictionary = {
+  localeLabel: "EN",
+  meta: {
+    title: "Fullstack Portfolio | C# (.NET) & TypeScript / React",
+    description:
+      "Professional Fullstack engineering portfolio balanced between C# and .NET backend architecture and JavaScript, TypeScript, and React interfaces.",
+    projectNotFoundTitle: "Project not found",
+  },
+  nav: {
+    stack: "Stack",
+    projects: "Projects",
+    methodology: "Approach",
+    contact: "Contact",
+    primaryNavLabel: "Primary navigation",
+    skipToContent: "Skip to main content",
+    menuLabel: "Menu",
+    closeLabel: "Close",
+    homeAriaLabel: "Go to homepage",
+    languageSwitcherLabel: "Language switcher",
+    menuOpenLabel: "Open navigation menu",
+    menuCloseLabel: "Close navigation menu",
+  },
+  cv: {
+    ctaShort: "Download CV",
+    downloadEs: "Descargar CV en Español (PDF)",
+    downloadEn: "Download CV in English (PDF)",
+    formatNote: "Direct PDF download format.",
+  },
+  hero: {
+    greetingBadge: "Hello, I am",
+    rolePrefix: "Focused on C# (.NET) Backend and JavaScript, TypeScript & React Frontend",
+    headline: "Balanced Fullstack engineering across C# (.NET) and TypeScript with React.",
+    subheadline:
+      "I build complete web systems from relational data modeling and business logic to accessible, strongly typed user interfaces.",
+    primaryCta: "View projects",
+    secondaryCta: "Download CV (EN)",
+    downloadCvCta: "Download CV",
+    viewProjectsCta: "View Projects",
+    imageAlt: "Professional portrait",
+    imagePlaceholderTitle: "Image placeholder",
+    imagePlaceholderPath: "public/images/hero-portrait.jpg",
+    imagePlaceholderHint: "Set the file path in src/content/profile.ts (PROFILE.heroImage)",
+    scrollDownLabel: "Scroll down to technical stack section",
+    diagramTitle: "Layered architecture",
+    diagramHint: "Select a layer to inspect responsibilities.",
+    layerActiveLabel: "Active layer",
+    boundaryHeading: "Data boundary",
+    responsibilitiesHeading: "Technical focus",
+    stepCounterLabel: "Layer",
+    layers: {
+      ui: {
+        label: "Web Interface",
+        tech: "React / TypeScript / CSS",
+        scope: "Frontend",
+        boundary: "React UI -> HTTP/JSON Contract",
+        summary:
+          "Composable components, explicit loading and error states, and keyboard-accessible interactions.",
+        highlights: [
+          "Typed components with loading, empty, and error states",
+          "Keyboard accessibility and responsive layout",
+        ],
+      },
+      api: {
+        label: "API Contract",
+        tech: "HTTP / REST / Validation",
+        scope: "Fullstack",
+        boundary: "React Client <-> .NET Services",
+        summary:
+          "Predictable request and response contracts shared between client applications and backend services.",
+        highlights: [
+          "DTOs aligned between .NET responses and TypeScript types",
+          "Input validation and consistent HTTP status contracts",
+        ],
+      },
+      domain: {
+        label: "Business Logic",
+        tech: "C# / .NET / Clean Architecture",
+        scope: "Backend",
+        boundary: "API Contract <-> Persistence",
+        summary:
+          "Use cases decoupled from infrastructure concerns, domain rules, and automated unit tests.",
+        highlights: [
+          "Isolated use cases and domain rules in C#/.NET",
+          "Unit tests decoupled from infrastructure",
+        ],
+      },
+      data: {
+        label: "Persistence",
+        tech: "SQL / Relational Databases",
+        scope: "Backend",
+        boundary: ".NET Domain -> SQL Engine",
+        summary:
+          "Normalized schemas, referential integrity, and efficient query design.",
+        highlights: [
+          "Normalized relational schemas and referential integrity",
+          "Efficient SQL queries and controlled migrations",
+        ],
+      },
+    },
+  },
+  stack: {
+    title: "Tech Stack",
+    subtitle:
+      "Technologies, tools, and models I use to build modern web interfaces, .NET backend services, relational databases, and AI-assisted workflows.",
+    backendTag: "Backend / C# & .NET",
+    frontendTag: "Frontend / JS, TS & React",
+    integrationTag: "Fullstack Integration",
+    capabilitiesLabel: "Key capabilities",
+    technologiesLabel: "Technologies",
+  },
+  projects: {
+    title: "Projects",
+    subtitle:
+      "Technical work structured around system architecture, C# decisions, and React/TypeScript implementation.",
+    filters: {
+      all: "All",
+      fullstack: "Fullstack",
+      backend: "C# Backend",
+      frontend: "React/TS Frontend",
+    },
+    emptyStatusBadge: "Active registry · 0 published projects",
+    emptyTitle: "Upcoming projects ready to publish",
+    emptyDescription:
+      "This section is ready to showcase real projects along with their system architecture, tech stack, live deployment link, and GitHub repository.",
+    emptyStructureTitle: "What each case study includes",
+    emptyContactCta: "Inquire about projects",
+    emptyHint: "Registry path: src/content/projects/index.ts",
+    emptyTemplateHint: "Typed template: src/content/projects/_template.ts",
+    filterGroupLabel: "Filter projects by focus",
+    featuredLabel: "Featured",
+    moreDecisionsHint: "more in case study",
+    noFilterMatches: "No published projects match this filter.",
+    resetFilter: "Show all",
+    backendTab: "C# / .NET Decisions",
+    frontendTab: "JS / TS / React Decisions",
+    viewCaseStudy: "Read case study",
+    liveDemo: "Live demo",
+    sourceCode: "Repository",
+    backToProjects: "Back to projects",
+    architectureTitle: "System architecture",
+    architectureNodesHint: "Select a node to inspect its responsibility.",
+    architectureLayers: {
+      client: "Client",
+      api: "API",
+      domain: "Domain",
+      data: "Data",
+      infra: "Infrastructure",
+    },
+    decisionsTitle: "Technical decisions by layer",
+    decisionContextLabel: "Context",
+    decisionChoiceLabel: "Decision",
+    decisionTradeoffLabel: "Trade-off",
+    problemTitle: "Context and problem",
+    stackTitle: "Tech stack",
+    stackGroups: {
+      backend: "Backend",
+      frontend: "Frontend",
+      database: "Database",
+      infrastructure: "Infrastructure",
+    },
+  },
+  methodology: {
+    title: "How I design and build software",
+    subtitle:
+      "Choices focused on keeping clear boundaries between domain logic, API contracts, and UI behavior.",
+  },
+  contact: {
+    title: "Contact & CV",
+    subtitle:
+      "Download my resume in English or Spanish, or send a direct message.",
+    cvPanelTitle: "Resume / CV",
+    cvPanelDescription:
+      "PDF versions configured for quick review and technical hiring workflows.",
+    directTitle: "Direct channels",
+    emailNotConfigured:
+      "Direct contact email has not been configured yet in src/content/profile.ts.",
+    copyEmail: {
+      idle: "Copy email",
+      copied: "Email copied",
+    },
+    form: {
+      title: "Send a message",
+      nameLabel: "Name",
+      namePlaceholder: "Your name",
+      emailLabel: "Email address",
+      emailPlaceholder: "you@email.com",
+      subjectLabel: "Subject",
+      subjectPlaceholder: "Reason for reaching out",
+      messageLabel: "Message",
+      messagePlaceholder: "Share details about the role, project, or technical question...",
+      submitIdle: "Prepare message in Gmail",
+      submitPending: "Preparing draft...",
+      simulationNote:
+        "Submitting opens a pre-filled Gmail draft with your subject and message ready to send.",
+      resetAction: "Send another message",
+    },
+    validation: {
+      name_too_short: "Name must be at least 2 characters long.",
+      name_too_long: "Name cannot exceed 100 characters.",
+      email_invalid: "Please enter a valid email address.",
+      subject_too_short: "Subject must be at least 3 characters long.",
+      subject_too_long: "Subject cannot exceed 140 characters.",
+      message_too_short: "Message must be at least 15 characters long.",
+      message_too_long: "Message cannot exceed 3000 characters.",
+    },
+    api: {
+      invalidJson: "Request body must be valid JSON.",
+      validationFailed: "Please review the highlighted fields before submitting again.",
+      rateLimited: "Too many requests in a short window. Please wait a minute and try again.",
+      simulatedSuccess:
+        "Gmail draft prepared with your message ready to send to josejavierchalco2006@gmail.com.",
+      serverError: "Unable to process your request right now.",
+    },
+  },
+  footer: {
+    tagline:
+      "Balanced Fullstack development across C# / .NET backend architecture and JavaScript, TypeScript, and React web interfaces.",
+    navigationTitle: "Navigation",
+    channelsTitle: "Channels & CV",
+    rightsReserved: "All rights reserved.",
+    cvEsShort: "Spanish CV (PDF)",
+    cvEnShort: "English CV (PDF)",
+    builtWith: "Built with Next.js, TypeScript, and Tailwind CSS.",
+    backToTop: "Back to top",
+  },
+  notFound: {
+    code: "404",
+    title: "Page not found",
+    description: "The requested page or project does not exist at this route.",
+    backHome: "Back to home",
+  },
+  foundation: {
+    badge: "Step 2 / Technical foundation active",
+    heading: "Portfolio foundation configured",
+    description:
+      "Next.js 16 routing, the Grafito Arquitectónico Dark Mode system, ES/EN localization, the typed project registry, and the contact endpoint are active and ready for Step 3 section assembly.",
+    tokensTitle: "Dark Mode palette verified",
+    typographyTitle: "Type scale (Oswald / Plus Jakarta Sans / IBM Plex Mono)",
+    statusTitle: "Current module status",
+    localeItem: "Active locale",
+    cvPathsItem: "Configured CV paths",
+    projectsCountItem: "Registered projects",
+    contactApiItem: "Contact endpoint",
+    nextStepNote:
+      "Next step: build SiteHeader, Interactive Hero, Balanced Stack, Scalable Projects Showcase, Methodology, and Contact + CV.",
+    pendingSectionNote: "Section reserved for the next implementation steps.",
+  },
+} satisfies Dictionary;
